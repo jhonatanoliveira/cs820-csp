@@ -125,8 +125,4 @@ Users can keep running the menu as long as they want by typing "Y" or "y" at the
 
 AUTHOR
 ---------
-Jhonatan S. Oliveira
-oliveira@uregina.ca
-Department of Computer Science
-University of Regina
-Canada
+Jhonatan S. Oliveira, oliveira@uregina.ca, Department of Computer Science, University of Regina, Canada
