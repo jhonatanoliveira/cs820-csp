@@ -18,7 +18,7 @@ The choice of this model is motivated by the fact that it has exact phase transi
 More precisely, CSPs are randomly generated using the following parameters: *n*, *p*, *alpha* and *r* where *n* is the number of variables, *p* (0 < p < 1) is the constraint tightness, and *r* and alpha (0 < r, alpha < 1) are two positive constants used by the model RB [2].
 
 
-There are 6 files in this solution:
+There are 5 files in this solution:
   - main.py: utility script with a simple user menu for running an initial state with a chosen search algorithm.
   - csp_inference.py: solving techniques implementations.
   - csp_generator.py: an instance CSP generator.
