@@ -1,3 +1,45 @@
+# csp_generator.py
+#
+# AUTHOR
+# ---------
+# Jhonatan S. Oliveira
+# oliveira@uregina.ca
+# Department of Computer Science
+# University of Regina
+# Canada
+#
+#
+# DESCRIPTION
+# -----------
+# A model for generating CSPs is implemented here.
+# We focus on generating CSPs that are binary, for simplicity.
+# Binary CSP instances should be randomly generated using the model RB proposed in [1].
+# The choice of this model is motivated by the fact that it has exact phase transition and the ability to generate asymptotically hard instances.
+#
+#
+# REFERENCES
+# ----------
+# [1] K. Xu and W. Li. Exact Phase Transitions in Random Constraint Satisfaction Problems. Journal of Artificial Intelligence Research, 12:93–103, 2000.
+#
+#
+# IMPLEMENTATION STRUCTURES
+# -------------------------
+# A CSP is described by variables, its domain, and constrains in the variable's domain.
+# Each variable is represented by a number.
+# For example, a CSP with 3 variables has the following structure:
+#   [0, 1, 2]
+# The domain of variable is also represented by numbers.
+# For instance, the domain of variable 0 is formed by the following 2 values:
+#   [0, 1]
+# Binary constrains are a list of tuples with values from variables that are not acceptable.
+# All constrains are saved in a dictionary where the keys indicate the couple of variables involved.
+# For example, constrains between variables 0 and 1 and between variables 2 and 3 can be described as follows:
+#   {
+#        (0,1): [(0,1), (1,2)],
+#        (1,2): [(1,0), (2,2)]
+#   }
+
+
 from math import log, pow
 from random import choice
 
