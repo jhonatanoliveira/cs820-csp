@@ -32,6 +32,7 @@ References
 ----------
 
 [1] Russell, S. J., & Norvig, P. (2002). Artificial intelligence: a modern approach.
+
 [2] K. Xu and W. Li. Exact Phase Transitions in Random Constraint Satisfaction Problems. Journal of Artificial Intelligence Research, 12:93–103, 2000.
 
 
@@ -85,7 +86,7 @@ This is an example of a complete user interaction run:
 
 ```
 $ python main.py
->>> Starting Assignment 2 Solution <<<
+>>> Starting Assignment 3 Solution <<<
 
 >>> Constants:
 --> Number of variables (n): 5

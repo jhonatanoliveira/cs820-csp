@@ -54,7 +54,7 @@ def main():
     # Input constants
     print()
     print()
-    print(">>> !!! Starting Assignment 2 Solution !!! <<<")
+    print(">>> !!! Starting Assignment 3 Solution !!! <<<")
     print()
     print(">>> Constants:")
     n = int(input("--> Number of variables (n): "))
