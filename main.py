@@ -18,6 +18,7 @@
 
 from csp_generator import generate_csp
 from csp_inference import backtrack, arc_consistency
+from time import time
 
 
 def main():
@@ -100,6 +101,7 @@ def main():
     print()
 
     # If AC can not reduce domain to zero or AC is not run.
+    tic = time()
     if ac_result:
       # Run search algorithm
       result = None
@@ -109,7 +111,6 @@ def main():
         result = backtrack({}, variables, domains, constrains, inf_type="FC")
       elif option == "3":
         result = backtrack({}, variables, domains, constrains, inf_type="MAC")
-      
       # Shows result from search algorithm
       if result:
         print(">>> Solution <<<")
@@ -121,8 +122,9 @@ def main():
     # In case AC returns fail.
     else:
       print(">>> You are lucky! Just by running AC we can tell that the CSP has no solution.")
-
+    tac = time()
     # Loop again if users wants to 
+    print(">>> Solution computed in " + str(tac-tic) + " (s)" )
     print(">>> Want to try again? (Y/N)")
     again = input("--> ")
 
